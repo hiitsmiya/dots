@@ -4,7 +4,7 @@ URL="https://coronavirus-tracker-api.herokuapp.com/all"
 res=$(curl -sf "$URL")
 
 if [ -z "$res" ]; then
-    echo " Impossible to fetch data. "
+    echo " impossible to fetch data. "
     return 1
 fi
 
