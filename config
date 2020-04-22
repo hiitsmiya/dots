@@ -204,4 +204,4 @@ colors {
 	}
 
 #startup things
-	exec_always --no-startup-id wal -i Pictures/Wallpapers/main.jpg
+	exec_always --no-startup-id wal --backend yaishoku -i Pictures/Wallpapers/main.jpg
