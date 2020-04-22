@@ -46,7 +46,7 @@ bindsym $mod+Shift+q kill
 # (i don't use dmenu anymore.) bindsym $mod+d exec --no-startup-id "dmenu_run -nb '$fg' -sb '$bg' -nf '$bg' -sf '$fg'"
 bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+y exec --no-startup-id exec kitty -e ranger ~/
-bindsym $mod+i exec --no-startup-id wal -i Pictures/Wallpapers/
+bindsym $mod+i exec --no-startup-id wal --backend yaishoku -i Pictures/Wallpapers/
 
 # change focus bindsym $mod+j focus left
 bindsym $mod+k focus down
@@ -204,4 +204,4 @@ colors {
 	}
 
 #startup things
-	exec --no-startup-id wal -i Pictures/Wallpapers/green2.jpg
+	exec_always --no-startup-id wal -i Pictures/Wallpapers/main.jpg
