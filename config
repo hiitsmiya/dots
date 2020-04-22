@@ -212,4 +212,6 @@ colors {
 #startup things
 	exec --no-startup-id wal -i Pictures/Wallpapers/main.jpg
 	exec  --no-startup-id ~/.config/dunst/launch.sh
+	exec --no-startup-id redshift || redshift -l 33.19:117.35
+
 
