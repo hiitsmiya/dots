@@ -1,9 +1,14 @@
 #!/bin/sh
-
+# install the programs
 yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
+
+# still for pywal backend and for kitty to display images in ranger
 pip install pillow
 pip install yaishoku
+# it doesn't matter if you remove once it's on your machine.
 yay -Rcns python-pip
+
+# get ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 
