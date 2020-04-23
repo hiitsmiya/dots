@@ -2,7 +2,7 @@
 # install the programs
 yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
 
-# still for pywal backend and for kitty to display images in ranger
+# install for pywal backend and for kitty to display images in ranger
 pip install pillow
 pip install yaishoku
 # it doesn't matter if you remove once it's on your machine.
