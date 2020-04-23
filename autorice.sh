@@ -14,3 +14,6 @@ cp -r $HOME/Documents/dots/scripts/ $HOME/.config/
 chmod +x ~/.config/scripts/fetch
 chmod +x ~/.config/scripts/panes.sh
 chmod +x ~/.config/scripts/pipes.sh
+
+
+echo "done, enjoy your rice."
