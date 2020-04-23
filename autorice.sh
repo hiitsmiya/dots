@@ -1,5 +1,6 @@
 #!/bin/sh
 
+yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
 
 
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
@@ -25,5 +26,14 @@ chmod +x $HOME/.config/scripts/panes.sh
 chmod +x $HOME/.config/scripts/pipes.sh
 cp -r $HOME/Documents/dots/.zshrc $HOME/
 
+cp +r $HOME/Documents/dots/.vimrc ~/
+sudo cp +r $HOME/Documents/dots/.xinitrc ~/
 
-echo "done, enjoy your rice."
+pip install pillow
+pip install yaishoku
+yay -Rcns python-pip
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+
+echo "done, enjoy your rice. use 'startx' to get hopping!"
