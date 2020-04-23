@@ -1,6 +1,4 @@
-lo# dots
-
-
+# dots
 just my configs and scripts for i3-gaps.
 
 i have a autorice script where you could get all my programs and configs, ***ONLY USE AT YOUR OWN RISK. i'd suggest only using it if you understand the source***
