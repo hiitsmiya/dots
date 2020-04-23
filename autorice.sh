@@ -25,7 +25,7 @@
                                                                                                                                 
                                                                                                                                 
 # install the programs
-yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
+yay -S python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
