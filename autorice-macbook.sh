@@ -33,10 +33,21 @@ broadcom-wl xf86-input-mtrack-git mbpfan-git cpupower
 sudo systemctl enable mbpfan
 sudo systemctl enable cpupower
 
+
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
 # it doesn't matter if you remove once a pip program is on your machine.
 yay -Rcns python-pip
+
+# bullshit apple shit
+
+sudo cp -r $HOME/Documents/dots/macbook-files/90-xhc_sleep.rules /etc/udev/rules.d/
+sudo cp -r $HOME/Documents/dots/macbook-files/cpupower /etc/default/
+sudo cp -r $HOME/Documents/dots/macbook-files/snd_hda_intel.conf /etc/modprobe.d/
+sudo cp -r $HOME/Documents/dots/macbook-files/30-touchpad.conf /etc/X11/xorg.conf.d/
+sudo cp -r $HOME/Documents/dots/macbook-files/30-pointer.conf /etc/X11/xorg.conf.d/
+cp -r $HOME/Documents/dots/macbook-files/.Xresources $HOME/
+cp -r $HOME/Documents/dots/macbook-files/.xinitrc $HOME/
 
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
 mkdir -p ~/.config/i3/
@@ -71,8 +82,6 @@ cp -r $HOME/Documents/dots/rc.conf $HOME/.config/ranger/
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp -r $HOME/Documents/dots/.vimrc $HOME/
 vim +PluginInstall +qall
-
-sudo cp -r $HOME/Documents/dots/.xinitrc $HOME/
 
 mkdir -p $HOME/Pictures/Screenshots
 
