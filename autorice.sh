@@ -26,8 +26,14 @@ chmod +x $HOME/.config/scripts/panes.sh
 chmod +x $HOME/.config/scripts/pipes.sh
 cp -r $HOME/Documents/dots/.zshrc $HOME/
 
-cp +r $HOME/Documents/dots/.vimrc ~/
-sudo cp +r $HOME/Documents/dots/.xinitrc ~/
+# terminal and file stuff
+mkdir -p $HOME/.config/kitty
+cp -r $HOME/Documents/dots/kitty.conf $/HOME/.config/kitty/
+mkdir -p $HOME/.config/ranger
+cp -r $HOME/Documents/dots/rc.conf $HOME/.config/ranger/
+
+cp +r $HOME/Documents/dots/.vimrc $HOME/
+sudo cp +r $HOME/Documents/dots/.xinitrc $HOME/
 
 pip install pillow
 pip install yaishoku
