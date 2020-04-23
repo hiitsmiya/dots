@@ -13,6 +13,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
+mkdir -p ~/.config/i3/
 cp -r $HOME/Documents/dots/config $HOME/.config/i3/
 
 # dunst stuff
@@ -43,5 +44,6 @@ cp -r $HOME/Documents/dots/rc.conf $HOME/.config/ranger/
 cp +r $HOME/Documents/dots/.vimrc $HOME/
 sudo cp +r $HOME/Documents/dots/.xinitrc $HOME/
 
+mkdir -p $HOME/Pictures/Screenshots
 
 echo "done, enjoy your rice. use 'startx' to get hopping."
