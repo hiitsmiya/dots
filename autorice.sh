@@ -4,7 +4,6 @@ yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
-pip install yaishoku
 # it doesn't matter if you remove once it's on your machine.
 yay -Rcns python-pip
 
