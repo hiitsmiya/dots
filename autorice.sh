@@ -1,3 +1,4 @@
 #!/bin/sh
 
-cp ~/Documents/dots/Wallpapers $HOME/Pictures/
+cp -r ~/Documents/dots/Wallpapers ~/Pictures
+
