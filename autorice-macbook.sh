@@ -28,9 +28,10 @@
 cd ~/Documents/ && git clone https://github.com/notdeven/dots
 # install the programs
 yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
-broadcom-wl xf86-input-mtrack-git mbpfan-git
+broadcom-wl xf86-input-mtrack-git mbpfan-git cpupower
 
-sudo systemctl mbpfan.service
+sudo systemctl enable mbpfan
+sudo systemctl enable cpupower
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
