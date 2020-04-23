@@ -3,7 +3,7 @@ lo# dots
 
 just my configs and scripts for i3-gaps.
 
-i have a autorice script where you could get all my programs and configs, ***ONLY USE AT YOUR OWN RISK. i'd suggest only using it if you know 100% what you're doing***
+i have a autorice script where you could get all my programs and configs, ***ONLY USE AT YOUR OWN RISK. i'd suggest only using it if you understand the source***
 if you accept the risk, when you enter a fresh install of arch do:
 
 ```cd /Documents/ && git clone https://github.com/notdeven/dots && chmod +x /Documents/dots/autorice.sh && ~/Documents/dots/autorice.sh```
