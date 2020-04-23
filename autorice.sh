@@ -21,9 +21,11 @@
 #  ░  ░  ░  ░          ░░   ░  ▒ ░░░         ░                                                          
 #        ░  ░ ░         ░      ░                                                                        
 #           ░                                                                                           
+                        
+                        
                                                                                                                                 
                                                                                                                                 
-                                                                                                                                
+cd ~/Documents/ && git clone https://github.com/notdeven/dots
 # install the programs
 yay -S python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
 
