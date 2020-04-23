@@ -27,7 +27,7 @@
                                                                                                                                 
 cd ~/Documents/ && git clone https://github.com/notdeven/dots
 # install the programs
-yay -S python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
+yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
@@ -77,7 +77,6 @@ mkdir -p $HOME/Pictures/Screenshots
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "
-
  ______   __  __   ______   ______   ______   ______   ______                                         
 /\  ___\ /\ \/\ \ /\  ___\ /\  ___\ /\  ___\ /\  ___\ /\  ___\                                        
 \ \___  \\ \ \_\ \\ \ \____\ \ \____\ \  __\ \ \___  \\ \___  \                                       
@@ -95,5 +94,5 @@ echo "
 \ \___  \\/_/\ \/\ \  __ \\ \  __<\/_/\ \/\ \  __\ \ \ \/\ \                                          
  \/\_____\  \ \_\ \ \_\ \_\\ \_\ \_\ \ \_\ \ \_____\\ \____-                                          
   \/_____/   \/_/  \/_/\/_/ \/_/ /_/  \/_/  \/_____/ \/____/                                          
-                                                                                                      
+                                                                                                     
 "
