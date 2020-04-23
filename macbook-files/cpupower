@@ -1,0 +1,2 @@
+# Define CPUs governor
+governor='powersave'
