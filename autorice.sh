@@ -32,10 +32,6 @@ pip install pillow
 # it doesn't matter if you remove once a pip program is on your machine.
 yay -Rcns python-pip
 
-# get ohmyzsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
 mkdir -p ~/.config/i3/
 cp -r $HOME/Documents/dots/config $HOME/.config/i3/
@@ -73,5 +69,9 @@ vim +PluginInstall +qall
 sudo cp -r $HOME/Documents/dots/.xinitrc $HOME/
 
 mkdir -p $HOME/Pictures/Screenshots
+
+
+# get ohmyzsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 echo "done, enjoy your rice. use 'startx' to get hopping."
