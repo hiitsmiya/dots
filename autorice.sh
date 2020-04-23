@@ -1,8 +1,5 @@
 #!/bin/sh
 
-echo "wal -R" >> ~/.xinitrc
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 cp $HOME/Documents/dots/Wallpapers $HOME/Pictures/
 
 mkdir ~/.config/i3blocks 
