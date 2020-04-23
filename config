@@ -52,7 +52,7 @@ bindsym $mod+Shift+q kill
 # (i don't use dmenu anymore.) bindsym $mod+d exec --no-startup-id "dmenu_run -nb '$fg' -sb '$bg' -nf '$bg' -sf '$fg'"
 bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+y exec --no-startup-id exec kitty -e ranger ~/
-bindsym $mod+i exec --no-startup-id wal --backend yaishoku -i Pictures/Wallpapers/ && ~/.config/dunst/launch.sh
+bindsym $mod+i exec --no-startup-id wal -i Pictures/Wallpapers/ && ~/.config/dunst/launch.sh
 bindsym $mod+g exec --no-startup-id notify-send 'screenshot taken' && scrot -d 2 ~/Pictures/Screenshots/'ss-%Y-%m-%d-%H_%M_%S.png'
 bindsym $mod+u exec --no-startup-id exec kitty -e ranger /run/media/dev
 
@@ -113,7 +113,7 @@ set $ws2 " II "
 set $ws3 " III "
 set $ws4 " IV "
 set $ws5 " V "
-set $ws6 " VI"
+set $ws6 " VI "
 set $ws7 " VII "
 set $ws8 " VIII "
 set $ws9 " IX "
