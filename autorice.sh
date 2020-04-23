@@ -40,7 +40,11 @@ cp -r $HOME/Documents/dots/kitty.conf $HOME/.config/kitty/
 mkdir -p $HOME/.config/ranger
 cp -r $HOME/Documents/dots/rc.conf $HOME/.config/ranger/
 
+# vim stuff
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp +r $HOME/Documents/dots/.vimrc $HOME/
+vim +PluginInstall +qall
+
 sudo cp +r $HOME/Documents/dots/.xinitrc $HOME/
 
 mkdir -p $HOME/Pictures/Screenshots
