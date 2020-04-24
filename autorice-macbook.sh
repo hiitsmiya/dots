@@ -68,6 +68,7 @@ sudo cp -r $HOME/Documents/dots/i3blocks.conf /etc/
 
 # terminal stuff
 cp -r $HOME/Documents/dots/scripts/ $HOME/.config/
+cp -r $HOME/Documents/dots/macbook-files/fetch $HOME/.config/scripts/
 chmod +x $HOME/.config/scripts/fetch
 chmod +x $HOME/.config/scripts/panes.sh
 chmod +x $HOME/.config/scripts/pipes.sh
