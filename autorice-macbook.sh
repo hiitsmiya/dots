@@ -27,7 +27,7 @@
                                                                                                                                 
 # install the programs
 yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
-broadcom-wl xf86-input-mtrack-git mbpfan-git cpupower
+broadcom-wl xf86-input-mtrack-git mbpfan-git cpupower feh
 
 sudo systemctl enable mbpfan
 sudo systemctl enable cpupower
@@ -50,10 +50,11 @@ cp -r $HOME/Documents/dots/macbook-files/.xinitrc $HOME/
 
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
 mkdir -p ~/.config/i3/
-cp -r $HOME/Documents/dots/config $HOME/.config/i3/
+cp -r $HOME/Documents/dots/macbook-files/config $HOME/.config/i3/
 
 # dunst stuff
 cp -r $HOME/Documents/dots/dunst/ $HOME/.config/
+cp -r $HOME/Documents/dots/macbook-files/dunstrc $HOME/.config/dunst/
 chmod +x $HOME/.config/dunst/launch.sh
 sudo cp -r $HOME/Documents/dots/dunstwal /bin/
 sudo chmod +x /bin/dunstwal
@@ -73,7 +74,7 @@ chmod +x $HOME/.config/scripts/pipes.sh
 
 # terminal and file stuff
 mkdir -p $HOME/.config/kitty
-cp -r $HOME/Documents/dots/kitty.conf $HOME/.config/kitty/
+cp -r $HOME/Documents/dots/macbook-files/kitty.conf $HOME/.config/kitty/
 mkdir -p $HOME/.config/ranger
 cp -r $HOME/Documents/dots/rc.conf $HOME/.config/ranger/
 
