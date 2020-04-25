@@ -1,7 +1,8 @@
 #!/bin/sh
                                                                                                                   
 # install the programs
-yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi i3blocks i3-gaps kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
+yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi opendesktop-fonts i3-gaps-rounded kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
+feh
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
@@ -17,13 +18,6 @@ cp -r $HOME/Documents/dots/dunst/ $HOME/.config/
 chmod +x $HOME/.config/dunst/launch.sh
 sudo cp -r $HOME/Documents/dots/dunstwal /bin/
 sudo chmod +x /bin/dunstwal
-
-# i3blocks stuff
-cp -r $HOME/Documents/dots/i3blocks/ ~/.config/
-chmod +x $HOME/.config/i3blocks/battery2.py
-chmod +x $HOME/.config/i3blocks/volume
-chmod +x $HOME/.config/i3blocks/corona
-sudo cp -r $HOME/Documents/dots/i3blocks.conf /etc/
 
 # terminal stuff
 cp -r $HOME/Documents/dots/scripts/ $HOME/.config/
@@ -50,4 +44,4 @@ mkdir -p $HOME/Pictures/Screenshots
 # get ohmyzsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-echo "done. enjoy your rice :sunglasses:"
+echo "done."
