@@ -52,8 +52,8 @@ bindsym $mod+Shift+q kill
 # (i don't use dmenu anymore.) bindsym $mod+d exec --no-startup-id "dmenu_run -nb '$fg' -sb '$bg' -nf '$bg' -sf '$fg'"
 bindsym $mod+b exec --no-startup-id brave
 bindsym $mod+y exec --no-startup-id exec kitty -e ranger ~/
-bindsym $mod+i exec --no-startup-id wal -i Pictures/Wallpapers/ && ~/.config/dunst/launch.sh
-bindsym $mod+g exec --no-startup-id notify-send 'screenshot taken' && scrot -d 2 ~/Pictures/Screenshots/'ss-%Y-%m-%d-%H_%M_%S.png'
+bindsym $mod+i exec --no-startup-id wal -i Pictures/墙纸/ && ~/.config/dunst/launch.sh
+bindsym $mod+g exec --no-startup-id notify-send ' screenshotted ' && scrot -d 2 ~/Pictures/Screenshots/'ss-%Y-%m-%d-%H_%M_%S.png'
 bindsym $mod+u exec --no-startup-id exec kitty -e ranger /run/media/dev
 
 
@@ -177,7 +177,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-for_window [class=".*"] border pixel 2
+border_radius 10
+for_window [class=".*"] border pixel 0
 gaps inner 5
 gaps outer 10
 
@@ -193,28 +194,13 @@ client.placeholder      $bg     $bg     $fg  $bg       $bg
 
 client.background       $bg
 # Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-	position top
-	height 35
-	status_command i3blocks
+# finds out, if available
 
-colors {
-    background $fg
-    statusline $bg
-    separator  $fg
-
-    focused_workspace  $fg $fg $bg
-    active_workspace   $fg $fg $bg
-    inactive_workspace $fg $fg $bg
-    urgent_workspace   $fg $fg $bg
-    binding_mode       $fg $fg $bg
-  }
-	}
 
 #startup things
 	exec --no-startup-id wal -i Pictures/Wallpapers/main.jpg
 	exec  --no-startup-id ~/.config/dunst/launch.sh
 	exec --no-startup-id redshift || redshift -l 33.19:117.35
 	exec_always --no-startup-id udiskie -q
+	exec_always --no-startup-id picom --config ~/.config/i3/picom.conf
 
