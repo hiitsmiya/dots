@@ -2,7 +2,7 @@
                                                                                                                   
 # install the programs
 yay -S brave-bin python-pywal python-pip ranger dunst redshift acpi opendesktop-fonts i3-gaps-rounded kitty scrot udiskie xorg-xbacklight ttf-font-awesome zsh
-feh
+feh picom
 
 # install for pywal backend and for kitty to display images in ranger
 pip install pillow
@@ -12,6 +12,7 @@ yay -Rcns python-pip
 cp -r $HOME/Documents/dots/Wallpapers ~/Pictures/
 mkdir -p ~/.config/i3/
 cp -r $HOME/Documents/dots/config $HOME/.config/i3/
+cp -r $HOME/Documents/dots/picom.conf $HOME/.config/i3
 
 # dunst stuff
 cp -r $HOME/Documents/dots/dunst/ $HOME/.config/
