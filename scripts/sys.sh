@@ -1,27 +1,4 @@
 #!/bin/sh
-#
-#  mount disk
-#
-
-dis="$(lsblk -ro "name,mountpoint,type" | \
-    grep '  part' | cut -d ' ' -f 1)"
-
-cho="$(echo "$dis" | rofi -dmenu -p mount)" || exit
-
-mkdir -p "$HOME/opt/mnt/$cho"
-sudo mount "/dev/$cho" "$HOME/opt/mnt/$cho"
-#!/bin/sh
-
-dis="$(ls "$HOME/opt/mnt")"
-cho="$(echo "$dis" | rofi -dmenu -p unmount)" || exit
-sudo umount "$HOME/opt/mnt/$cho"
-rm -rf "$HOME/opt/mnt/$cho"
-miyaToday at 7:26 AM
-
-miyaToday at 7:55 AM
-
-miyaToday at 11:58 AM
-#!/bin/sh
   
 # 颜色
 
